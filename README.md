@@ -1,23 +1,25 @@
 # Stellwerk Platform Orchestrator Images
 
 This repository is the public catalog for the container images required to run
-the Stellwerk Platform Orchestrator. We are publishing the existing images
-first while we prepare their source repositories for open source publication.
+the Stellwerk Platform Orchestrator. Each published source release below is
+linked to the matching image release.
 
 | Component | Image | Source release |
 | --- | --- | --- |
-| Control plane | [`ghcr.io/stellwerk-labs/platform-orchestrator-cp:v1.0.1`](https://github.com/orgs/stellwerk-labs/packages/container/package/platform-orchestrator-cp) | `platform-orchestrator-cp@v1.0.1` |
-| Data plane | [`ghcr.io/stellwerk-labs/platform-orchestrator-dp:v1.0.1`](https://github.com/orgs/stellwerk-labs/packages/container/package/platform-orchestrator-dp) | `platform-orchestrator-dp@v1.0.1` |
-| Console | [`ghcr.io/stellwerk-labs/platform-orchestrator-frontend:v1.0.1`](https://github.com/orgs/stellwerk-labs/packages/container/package/platform-orchestrator-frontend) | `platform-orchestrator-frontend@v1.0.1` |
-| IAM | [`ghcr.io/stellwerk-labs/platform-orchestrator-iam:v1.0.0`](https://github.com/orgs/stellwerk-labs/packages/container/package/platform-orchestrator-iam) | `platform-orchestrator-iam@v1.0.0` |
-| Deployment runner | [`ghcr.io/stellwerk-labs/platform-orchestrator-runner:v1.0.0`](https://github.com/orgs/stellwerk-labs/packages/container/package/platform-orchestrator-runner) | `platform-orchestrator-runner@v1.0.0` |
+| Control plane | [`ghcr.io/stellwerk-labs/platform-orchestrator-cp:v1.0.1`](https://github.com/orgs/stellwerk-labs/packages/container/package/platform-orchestrator-cp) | [`platform-orchestrator-cp@v1.0.1`](https://github.com/stellwerk-labs/platform-orchestrator-cp/tree/v1.0.1) |
+| Data plane | [`ghcr.io/stellwerk-labs/platform-orchestrator-dp:v1.0.1`](https://github.com/orgs/stellwerk-labs/packages/container/package/platform-orchestrator-dp) | [`platform-orchestrator-dp@v1.0.1`](https://github.com/stellwerk-labs/platform-orchestrator-dp/tree/v1.0.1) |
+| Console | [`ghcr.io/stellwerk-labs/platform-orchestrator-frontend:v1.0.1`](https://github.com/orgs/stellwerk-labs/packages/container/package/platform-orchestrator-frontend) | [`platform-orchestrator-frontend@v1.0.1`](https://github.com/stellwerk-labs/platform-orchestrator-frontend/tree/v1.0.1) |
+| IAM | [`ghcr.io/stellwerk-labs/platform-orchestrator-iam:v1.0.0`](https://github.com/orgs/stellwerk-labs/packages/container/package/platform-orchestrator-iam) | [`platform-orchestrator-iam@v1.0.0`](https://github.com/stellwerk-labs/platform-orchestrator-iam/tree/v1.0.0) |
+| Deployment runner | [`ghcr.io/stellwerk-labs/platform-orchestrator-runner:v1.0.0`](https://github.com/orgs/stellwerk-labs/packages/container/package/platform-orchestrator-runner) | Source repository publication pending |
 
 The images target `linux/amd64` and `linux/arm64`. They are licensed under the
 [EUPL-1.2](LICENSE). The license applies to the Stellwerk image distribution;
 bundled third-party software remains under its respective license.
 
-Source links and build automation will be added here as each component source
-repository is published.
+The deployment runner source repository remains private while its compatibility
+API default is under review. Image and chart releases are intentionally
+separate: a chart is released manually only after its default image versions
+are updated as a coherent set.
 
 ## Helm chart
 
